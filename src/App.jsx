@@ -2,7 +2,7 @@ import React, { createContext, useState } from 'react'
 import{BrowserRouter,Routes,Route} from 'react-router-dom'
 import Home from './Home'
 import Products  from './Products'
-import contact from './Contact'
+import Contact from './Contact'
 import Navbar from './Navbar'
 export const HelloContext=createContext()
 function App() {
