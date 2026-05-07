@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/Products" element={<Products/>} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/Contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </HelloContext.Provider>
