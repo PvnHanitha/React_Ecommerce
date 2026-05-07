@@ -19,7 +19,7 @@ function Products() {
     )
     return (
         <>
-            <h1>Products {cart.length}</h1>
+            <h1>Products </h1>
             <input
             type="text"
             placeholder='Enter to search the product'
@@ -31,16 +31,19 @@ function Products() {
                 (<p>Product Unavailable</p>):
                 (<h1>Branded Products</h1>)
             }
-            {products.length===0 ? (<p>No Products Available</p>):(<>{
+            {products.length===0 ? (<p>No Products Available</p>):(<>
+            <div id="products">
+               {
                 filteredProducts.map((v)=>(
                     <div key={v.id}>
                     <li>{v.productName}</li>
                     <li>{v.price}₹</li>
-                    <img src={v.p_img} width="100"/>
+                    <img src={v.p_img} width="100%"/>
                     <button onClick={()=>addToCart(v)}>Add To Cart</button>
                     </div>
                 ))
             }
+            </div>
             {
                 cart.length===0?(<p>No item Available in cart</p>):(
                     <>
